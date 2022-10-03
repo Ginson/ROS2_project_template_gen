@@ -1,0 +1,26 @@
+ros2_project_template_gen:
+package_name: demo
+version: 1.0
+description: My sample demo package
+maintainer_email: ginson.gm@gmail.com
+license: MIT License
+author: 
+ - Ginson Mathew
+ - Vivien Royers
+buildtool_depend:
+ - ament_cmake
+ - rclcpp
+executable_depends:
+ - rclcpp
+test_depends:
+ - ament_lint_auto
+ - ament_lint_common
+publishers:
+ - topic_name: simple_topic
+   message_type: std_msgs::msg::String
+ - topic_name: simple_topic_1
+   message_type: std_msgs::msg::String
+subscribers:
+ - topic_name: sub_simple_topic
+   message_type: std_msgs::msg::String
+
